@@ -1,0 +1,73 @@
+#root,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.app {
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/city.webp');
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+}
+
+.card {
+    background-color: whitesmoke;
+    width: 40%;
+    height: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2px;
+box-shadow: 8px 8px 4px 4px rgba(0, 0, 0, 0.58);
+    -webkit-box-shadow: 8px 8px 4px 4px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: 8px 8px 4px 4px rgba(0, 0, 0, 0.58);
+    overflow-y: auto;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    height: 580px;
+
+
+}
+
+
+
+.button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 200px;
+    width: 210px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(22, 76, 167, 0.6);
+    margin-bottom: 15px;
+}
+.button:hover{
+    background-color: aliceblue;
+}
+@media only sceen and(max-width:600px) {
+    .card {
+        width: 80%;
+        height: 30%;
+    }
+}
